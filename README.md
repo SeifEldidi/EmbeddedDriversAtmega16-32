@@ -6,6 +6,21 @@ Atmega32/16 Drivers
 
 A Collection of Embedded drivers written for atmega32 Microcontroller also compatible for Atmega16 but beware of memory usage 
 
+-DHT11 Temperature Sensor
+-MAX7219 7segment Driver
+-7segment Driver
+-Keypad Driver
+-SPI driver
+-USART driver
+-ADC driver
+-Interrupts(internal/external) driver
+-LCD driver
+-Ultrasonic Sensor Driver
+-LED driver
+-GPIO driver
+
+Alot of more drivers will be updated soon
+
 ## Getting Started
 
 ### Dependencies
