@@ -9,15 +9,15 @@ A Collection of Embedded drivers written for atmega32 Microcontroller also compa
 -DHT11 Temperature Sensor    
 -MAX7219 7segment Driver  
 -7segment Driver  
--Keypad Driver
--SPI driver
--USART driver
--ADC driver
--Interrupts(internal/external) driver
--LCD driver
--Ultrasonic Sensor Driver
--LED driver
--GPIO driver
+-Keypad Driver  
+-SPI driver  
+-USART driver  
+-ADC driver  
+-Interrupts(internal/external) driver  
+-LCD driver  
+-Ultrasonic Sensor Driver  
+-LED driver  
+-GPIO driver  
 
 Alot of more drivers will be updated soon
 
