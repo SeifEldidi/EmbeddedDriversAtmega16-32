@@ -37,6 +37,10 @@
 Bool MAX7219_INIT();
 Bool MAX7219_SEND_Data(uint8 Address,uint8 Data);
 void MAX7219Disp_Number(int32_t data);
+void MAX7219Disp_float(float Val,Bool Temp_flag);
+Bool Max7219_Send_DArr_Ddata(uint8 Address,uint8 Data[],uint8 size,Bool *temp_flag,Bool *temp_flag_2);
+void MAX7219Disp_float_num(float Val,Bool Temp_flag,uint32 Num);
+Bool MAX7219_INIT_ARR();
 
 
 #endif /* MAX7219_H_ */
