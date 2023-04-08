@@ -18,6 +18,8 @@ A Collection of Embedded drivers written for atmega32 Microcontroller also compa
 -Ultrasonic Sensor Driver  
 -LED driver  
 -GPIO driver  
+-I2C Driver  
+-RTCDS1307 driver
 
 Alot of more drivers will be updated soon
 
