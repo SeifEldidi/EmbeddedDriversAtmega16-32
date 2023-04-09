@@ -150,7 +150,6 @@ Bool RTCDS1307_DATE_STR(uint8 *Date_Buff)
 	Date_Buff[7] = '0';
 	Date_Buff[8] = ZERO + (Temp_Date_Buff[3] >> 4);
 	Date_Buff[9] = ZERO + (Temp_Date_Buff[3] & 0x0F);
-	Date_Buff[10] = '/';
 	switch(Temp_Date_Buff[0])
 	{
 		case SUNDAY:
