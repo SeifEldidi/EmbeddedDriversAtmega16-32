@@ -5,6 +5,13 @@
  *      Author: Seif pc
  */
 
+/*
+ * RTCDS1307.h
+ *
+ *  Created on: Apr 8, 2023
+ *      Author: Seif pc
+ */
+
 #ifndef RTCDS1307_H_
 #define RTCDS1307_H_
 
@@ -36,12 +43,17 @@
 #define MODE_PM  2
 #define AM_PM_MODE_POS 5
 #define TW_TFR_MODE_POS 6
+#define ZERO '0'
+#define NULLChar '\0'
 /*********Software Interfaces*******************/
 Bool RTCDS1307_SET_TIME(uint8 Mode,uint8 Sec,uint8 Mins,uint8 Hrs);
 Bool RTCDS1307_SET_DATE(uint8 Day,uint8 Date,uint8 Month,uint8 Year);
 
 Bool RTCDS1307_GET_TIME(uint8 *Time_Buff);
-Bool RTCDS1307_GET_DATA(uint8 *Date_Buff);
+Bool RTCDS1307_GET_DATE(uint8 *Date_Buff);
+
+Bool RTCDS1307_TIME_STR(uint8 *Time_Buff);
+Bool RTCDS1307_DATE_STR(uint8 *Date_Buff);
 
 
 #endif /* RTCDS1307_H_ */
