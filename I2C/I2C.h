@@ -65,6 +65,9 @@ typedef struct
 	uint32 SCL_FREQ;
 	uint8 Prescaler_Freq:2;
 	uint8 Reserved:6;
+#if I2C_RECIEVE_INTERRUPT==FEATURE_ENABLE
+	void (*I2C_RX_CALLBACK)(void);
+#endif
 }I2C_CONFIG_t;
 
 /*********Software Interfaces*******************/
