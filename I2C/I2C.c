@@ -6,6 +6,10 @@
  */
 #include "I2C.h"
 
+#if I2C_RECIEVE_INTERRUPT==FEATURE_ENABLE
+	void (*I2C_RX_CALLBACK_PTR)(void)=NULL;
+#endif
+
 static int32 Pow_4(int8 exp)
 {
 	int8 Counter=0;
@@ -50,6 +54,10 @@ Bool I2C_INIT(I2C_CONFIG_t *I2C)
 		TWBR=((uint32)F_CPU/I2C->SCL_FREQ-16)/(2*Pow_4(I2C->Prescaler_Freq));
 	else{
 	}
+#if I2C_RECIEVE_INTERRUPT==FEATURE_ENABLE
+	I2C_RX_CALLBACK_PTR=I2C->I2C_RX_CALLBACK;
+	SET_BIT(TWCR,TWIE);
+#endif
 	return ret;
 }
 
@@ -348,3 +356,12 @@ Bool I2C_READ_NBYTES(uint8 Add,uint8 REG_add,uint8 *Data,int8 No_bytes)
 	I2C_WAIT_STOP();
 	return ret;
 }
+
+#if I2C_RECIEVE_INTERRUPT==FEATURE_ENABLE
+void I2C_ISR_()
+{
+	I2C_CLEAR_FLAG();
+	if(I2C_RX_CALLBACK_PTR)
+		I2C_RX_CALLBACK_PTR();
+}
+#endif
