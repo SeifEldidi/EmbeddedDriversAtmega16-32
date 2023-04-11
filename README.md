@@ -19,7 +19,7 @@ A Collection of Embedded drivers written for atmega32 Microcontroller also compa
 -LED driver  
 -GPIO driver  
 -I2C Driver  
--RTCDS1307 driver
+-RTCDS1307 driver  
 -BMP180 Pressure/Temperature Sensor
 
 Alot of more drivers will be updated soon
