@@ -15,7 +15,7 @@ static int32 Pow_4(int8 exp)
 	return ret;
 }
 
-static void I2C_WRITE_BYTE(uint8 data)
+void I2C_WRITE_BYTE(uint8 data)
 {
 	I2C_WRITE_BUFFER=data;
 	I2C_WRITE_ENABLE();
@@ -53,7 +53,62 @@ Bool I2C_INIT(I2C_CONFIG_t *I2C)
 	return ret;
 }
 
-Bool I2C_WRITE_NBYTES(uint8 Add,uint8 H_add,uint8 *Data,uint8 No_bytes)
+Bool I2C_Write_BYTE(uint8 Add,uint8 REG_add,uint8 Data)
+{
+	Bool ret = E_OK;
+	I2C_GEN_START_COND(); //initiate Start Condition on SCL/SDA
+	I2C_WAIT();
+	switch (I2C_STATUS) {
+	case TWSR_START_MSTR:
+	case TWSR_REPEATED_START_MSTR:
+		break;
+	case TWSR_ARBIT_LOSS:
+		ret = E_NOK; //Error
+	} //start bit sent SDA switched from high to low bus is busy hence send address
+	if (ret == E_OK) {
+		I2C_WRITE_BYTE(Add | I2C_WRITE);
+		switch (I2C_STATUS) {
+		case TWSR_MSTR_ADD_ACK_REC:
+			break;
+		case TWSR_MSTR_ADD_NACK_REC:
+		case TWSR_ARBIT_LOSS:
+			ret = E_NOK;
+			break;
+		default:
+			ret = E_NOK;
+		} //salve+W/R transmitted send data
+	}
+	if (ret == E_OK) {
+		I2C_WRITE_BYTE(REG_add | I2C_WRITE);
+		switch (I2C_STATUS) {
+		case TWSR_MSTR_DATA_ACK_REC:
+			break;
+		case TWSR_MSTR_DATA_NACK_REC:
+		case TWSR_ARBIT_LOSS:
+			ret = E_NOK;
+			break;
+		default:
+			ret = E_NOK;
+		}
+	}
+	if (ret == E_OK) {
+		I2C_WRITE_BYTE(Data);
+		I2C_WAIT();
+		switch (I2C_STATUS) {
+		case TWSR_MSTR_DATA_ACK_REC:
+			break;
+		case TWSR_MSTR_DATA_NACK_REC:
+		case TWSR_ARBIT_LOSS:
+			ret = E_NOK;
+			break;
+		default:
+			ret = E_NOK;
+		}
+	}
+	return ret;
+}
+
+Bool I2C_WRITE_NBYTES(uint8 Add,uint8 REG_add,uint8 *Data,uint8 No_bytes)
 {
 	Bool ret = E_OK;
 	I2C_GEN_START_COND();//initiate Start Condition on SCL/SDA
@@ -82,7 +137,7 @@ Bool I2C_WRITE_NBYTES(uint8 Add,uint8 H_add,uint8 *Data,uint8 No_bytes)
 	}
 	if(ret==E_OK)
 	{
-		I2C_WRITE_BYTE(H_add|I2C_WRITE);
+		I2C_WRITE_BYTE(REG_add|I2C_WRITE);
 		switch(I2C_STATUS)
 		{
 			case TWSR_MSTR_DATA_ACK_REC:
@@ -122,7 +177,83 @@ Bool I2C_WRITE_NBYTES(uint8 Add,uint8 H_add,uint8 *Data,uint8 No_bytes)
 	return ret;
 }
 
-Bool I2C_READ_NBYTES(uint8 Add,uint8 H_add,uint8 *Data,int8 No_bytes)
+Bool I2C_READ_BYTE(uint8 Add,uint8 REG_add,uint8 *Data)
+{
+	Bool ret = E_OK;
+	I2C_GEN_START_COND(); //initiate Start Condition on SCL/SDA
+	I2C_WAIT();
+	switch (I2C_STATUS) {
+	case TWSR_START_MSTR:
+	case TWSR_REPEATED_START_MSTR:
+		break;
+	case TWSR_ARBIT_LOSS:
+		ret = E_NOK; //Error
+	} //start bit sent SDA switched from high to low bus is busy hence send address
+	if (ret == E_OK) {
+		I2C_WRITE_BYTE(Add | I2C_WRITE);
+		switch (I2C_STATUS) {
+		case TWSR_MSTR_ADD_ACK_REC:
+			break;
+		case TWSR_MSTR_ADD_NACK_REC:
+		case TWSR_ARBIT_LOSS:
+			ret = E_NOK;
+			break;
+		default:
+			ret = E_NOK;
+		} //salve+W/R transmitted send data
+	}
+	if (ret == E_OK) {
+		I2C_WRITE_BYTE(REG_add | I2C_WRITE);
+		switch (I2C_STATUS) {
+		case TWSR_MSTR_DATA_ACK_REC:
+			break;
+		case TWSR_MSTR_DATA_NACK_REC:
+		case TWSR_ARBIT_LOSS:
+			ret = E_NOK;
+			break;
+		default:
+			ret = E_NOK;
+		}
+	}
+	if (ret == E_OK) {
+		I2C_GEN_START_COND(); //initiate Repeated Start Condition on SCL/SDA
+		I2C_WAIT();
+		switch (I2C_STATUS) {
+		case TWSR_REPEATED_START_MSTR:
+		case TWSR_START_MSTR:
+			break;
+		case TWSR_ARBIT_LOSS:
+			ret = E_NOK;
+			break;
+		default:
+			ret = E_NOK;
+		}
+	}
+	if (ret == E_OK) //send data
+	{
+		I2C_WRITE_BYTE(Add | I2C_READ);
+		switch (I2C_STATUS) {
+		case TW_MSR_SLA_R_ACK:
+			break;
+		case TW_MSR_SLA_R_NACK:
+		case TWSR_ARBIT_LOSS:
+			ret = E_NOK;
+			break;
+		default:
+			ret = E_NOK;
+		}
+	}
+	if (ret == E_OK) {
+		I2C_READ_NACK();
+		I2C_WAIT();
+		*Data = I2C_WRITE_BUFFER;
+		if (I2C_STATUS != TW_MSR_DATA_R_NACK)
+			ret = E_NOK;
+	}
+	return ret;
+}
+
+Bool I2C_READ_NBYTES(uint8 Add,uint8 REG_add,uint8 *Data,int8 No_bytes)
 {
 	Bool ret = E_OK;
 	I2C_GEN_START_COND(); //initiate Start Condition on SCL/SDA
@@ -148,7 +279,7 @@ Bool I2C_READ_NBYTES(uint8 Add,uint8 H_add,uint8 *Data,int8 No_bytes)
 		} //salve+W/R transmitted send data
 	}
 	if (ret == E_OK) {
-		I2C_WRITE_BYTE(H_add | I2C_WRITE);
+		I2C_WRITE_BYTE(REG_add | I2C_WRITE);
 		switch (I2C_STATUS) {
 			case TWSR_MSTR_DATA_ACK_REC:
 				break;
