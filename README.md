@@ -21,7 +21,7 @@ A Collection of Embedded drivers written for atmega32 Microcontroller also compa
 -I2C Driver  
 -RTCDS1307 driver  
 -BMP180 Pressure/Temperature Sensor  
--External ROM 24C32 
+-External ROM 24C32   
 -Extern DAC MCP4725
 
 Alot of more drivers will be updated soon
