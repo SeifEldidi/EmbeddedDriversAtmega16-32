@@ -8,9 +8,10 @@
 #ifndef I2C_H_
 #define I2C_H_
 
+/************Includes Section**************/
 #include "mcalStdtypes.h"
-#include "Gpiodriver.h"
-#include "Interrupts.h"
+//#include "Gpiodriver.h"
+//#include "Interrupts.h"
 /************Define Section******************/
 #define TWPS_PRESCALER_1   (uint8)0x00
 #define TWPS_PRESCALER_4   (uint8)0x01
@@ -75,6 +76,8 @@ Bool I2C_INIT(I2C_CONFIG_t *I2C);
 Bool I2C_WRITE_NBYTES(uint8 Add,uint8 H_add,uint8 *Data,uint8 No_bytes);
 Bool I2C_READ_NBYTES(uint8 Add,uint8 H_add,uint8 *Data,int8 No_bytes);
 Bool I2C_Write_BYTE(uint8 Add,uint8 REG_add,uint8 Data);
+Bool I2C_Write_BYTE_(uint8 Add,uint8 Data);
+Bool I2C_Write_NBYTE_(uint8 Add,uint8 *Data,uint8 No_bytes);
 Bool I2C_READ_BYTE(uint8 Add,uint8 REG_add,uint8 *Data);
 void I2C_WRITE_BYTE(uint8 data);
 
