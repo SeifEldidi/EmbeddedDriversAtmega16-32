@@ -113,6 +113,57 @@ Bool I2C_Write_BYTE(uint8 Add,uint8 REG_add,uint8 Data)
 			ret = E_NOK;
 		}
 	}
+	I2C_GEN_STOP_COND();
+	I2C_WAIT_STOP();
+	return ret;
+}
+
+Bool I2C_Write_NBYTE_(uint8 Add,uint8 *Data,uint8 No_bytes)
+{
+	Bool ret = E_OK;
+	I2C_GEN_START_COND(); //initiate Start Condition on SCL/SDA
+	I2C_WAIT();
+	switch (I2C_STATUS) {
+		case TWSR_START_MSTR:
+		case TWSR_REPEATED_START_MSTR:
+			break;
+		case TWSR_ARBIT_LOSS:
+			ret = E_NOK; //Error
+	} //start bit sent SDA switched from high to low bus is busy hence send address
+	if (ret == E_OK) {
+		I2C_WRITE_BYTE(Add | I2C_WRITE);
+		switch (I2C_STATUS) {
+			case TWSR_MSTR_ADD_ACK_REC:
+				break;
+			case TWSR_MSTR_ADD_NACK_REC:
+			case TWSR_ARBIT_LOSS:
+				ret = E_NOK;
+				break;
+			default:
+				ret = E_NOK;
+		} //salve+W/R transmitted send data
+	}
+	if (ret == E_OK) {
+		uint8 Bytes_sent = 0;
+		for (Bytes_sent = 0; Bytes_sent <= No_bytes - 1; Bytes_sent++) {
+			I2C_WRITE_BYTE(*(Data + Bytes_sent));
+			I2C_WAIT();
+			switch (I2C_STATUS) {
+				case TWSR_MSTR_DATA_ACK_REC:
+					break;
+				case TWSR_MSTR_DATA_NACK_REC:
+				case TWSR_ARBIT_LOSS:
+					ret = E_NOK;
+					break;
+				default:
+					ret = E_NOK;
+			}
+			if (ret == E_NOK)
+				break;
+		}
+	}
+	I2C_GEN_STOP_COND();
+	I2C_WAIT_STOP();
 	return ret;
 }
 
