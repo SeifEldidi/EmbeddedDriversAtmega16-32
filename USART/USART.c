@@ -197,7 +197,7 @@ uint8 Usart_rx_string(USART_Config_t *USART,uint8 *Data)
 void USART_TX_ISR()
 {
 #if USART_INTERRUPT_ENABLE==FEATURE_ENABLE
-	USART_TX_CLEAR_FLAG();
+	USART_TX_FLAG_CLEAR();
 	if(UASRT_TX_callback_ptr)
 		UASRT_TX_callback_ptr();
 #endif
@@ -206,7 +206,7 @@ void USART_TX_ISR()
 void USART_RX_ISR()
 {
 #if USART_INTERRUPT_ENABLE==FEATURE_ENABLE
-	USART_RX_CLEAR_FLAG();
+	USART_RX_FLAG_CLEAR();
 	if (UASRT_RX_callback_ptr)
 		UASRT_RX_callback_ptr();
 #endif
