@@ -4,7 +4,6 @@
  *  Created on: Feb 26, 2023
  *      Author: Seif pc
  */
-
 #ifndef MCAL_MCAL_UART_H_
 #define MCAL_MCAL_UART_H_
 
@@ -23,6 +22,9 @@
 
 #define USART_TX_INT_ENABLE() (SET_BIT(UCSRB,TXCIE))
 #define USART_RX_INT_ENABLE() (SET_BIT(UCSRB,RXCIE))
+
+#define USART_TX_FLAG_CLEAR() (SET_BIT(UCSRA,TXC))
+#define USART_RX_FLAG_CLEAR() (SET_BIT(UCSRA,RXC))
 
 #define USART_TX_INT_DISABLE() (CLEAR_BIT(UCSRB,TXCIE))
 #define USART_RX_INT_DISABLE() (CLEAR_BIT(UCSRB,RXCIE))
@@ -82,3 +84,4 @@ uint8 Mcal_Usart_send_string(USART_Config_t *USART,uint8* Data);
 uint8 Mcal_Usart_rx(USART_Config_t *USART,uint8 *Data);
 uint8 Mcal_Usart_rx_string(USART_Config_t *USART,uint8 *Data);
 #endif /* MCAL_MCAL_UART_H_ */
+
