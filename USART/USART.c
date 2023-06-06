@@ -4,277 +4,202 @@
  *  Created on: Feb 26, 2023
  *      Author: Seif pc
  */
-#include "USART.h"
+#include "mcal_uart.h"
 
-#if USART_INTERRUPT_ENABLE==FEATURE_ENABLE
-	static void (*INT_TxCallback_handler)(void);
-	static void (*INT_RxCallabck_handler)(void);
+#define BAUD_PRESCALE(USART_BAUDRATE) (((F_CPU / (USART_BAUDRATE * 16UL))) - 1)
+
+#if USART_INT_TX==TRUE
+	void (*UASRT_TX_callback_ptr)(void)=NULL;
+	#endif
+#if USART_INT_RX==TRUE
+	void(* UASRT_RX_callback_ptr)(void)=NULL;
 #endif
 
-static inline void USART_DISABLE()
+static void Baud_rate_set(USART_Config_t *USART)
 {
-	USART_TX_DISABLE();
-	USART_RX_DISABLE();
+	uint32 UBRR;
+	switch(USART->Enhanced_Speed)
+	{
+		case USART_DOUBLE_SPEED_ENABLE:
+			USART_D2X_ENABLE();
+			UBRR=(((F_CPU / (USART->Baud_rate * 8UL))) - 1);
+			UBRRL=(uint8)UBRR;
+			UBRRH=(uint8)(UBRR>>8);
+			break;
+		case USART_DOUBLE_SPEED_DISABLE:
+			USART_D2X_DISABLE();
+			UBRR=(((F_CPU / (USART->Baud_rate * 16UL))) - 1);
+			UBRRL=(uint8)UBRR;
+			UBRRH=(uint8)(UBRR>>8);
+			break;
+	}
 }
 
-static Bool USART_Double_speed_enable(USART_CONFIG_t *USART)
+static void USART_BUFF_SIZE_set(USART_Config_t *USART)
 {
-	Bool ret=E_OK;
-	if(NULL==USART)
-	ret=E_NOK;
+	switch(USART->Buff_size)
+	{
+		case USART_DATA_5_BITS:
+			WRITE_BIT(UCSRB,UCSZ2,FALSE);
+			break;
+		case USART_DATA_6_BITS:
+			UCSRC|=(1<<URSEL|1<<UCSZ0);
+			WRITE_BIT(UCSRB,UCSZ2,FALSE);
+					break;
+		case USART_DATA_7_BITS:
+			UCSRC|=(1<<URSEL|1<<UCSZ1);
+			WRITE_BIT(UCSRB,UCSZ2,FALSE);
+					break;
+		case USART_DATA_8_BITS:
+			UCSRC|=(1<<URSEL|1<<UCSZ1|1<<UCSZ0);
+			WRITE_BIT(UCSRB,UCSZ2,FALSE);
+					break;
+		case USART_DATA_9_BITS:
+			UCSRC|=(1<<URSEL|1<<UCSZ1|1<<UCSZ0);
+			WRITE_BIT(UCSRB,UCSZ2,TRUE);
+			break;
+			default:
+				break;
+	}
+	switch (USART->P_Mode) {
+		case USART_PARITY_EVEN:
+			UCSRC |= (1 << URSEL | 1 << UPM1);
+			break;
+		case USART_PARITY_ODD:
+			UCSRC |= (1 << URSEL | 1 << UPM1 | 1 << UPM0);
+			break;
+		default:
+			break;
+	}
+}
+
+uint8 Mcal_Usart_init(USART_Config_t *USART)
+{
+	uint8 Err_state=E_OK;
+	if(USART==NULL)
+		Err_state=E_NOK;
 	else
 	{
-		switch(USART->USART_D2X_ENALBE)
-		{
-			case USART_DOUBLE_SPEED_ENABLE:
-				USART_DOUBLE_SPEED_ENABLE_();
-				break;
-			case USART_DOUBLE_SPEED_DISABLE:
-				USART_DOUBLE_SPEED_DISABLE_();
-				break;
-			default:
-				ret=E_NOK;
-		}
-	}
-	return ret;
-}
-
-static Bool USART_Full_duplex(USART_CONFIG_t *USART)
-{
-	Bool ret = E_OK;
-	if (NULL == USART)
-		ret = E_NOK;
-	else {
-		USART_RX_ENABLE();
+		Baud_rate_set(USART);
+		USART_BUFF_SIZE_set(USART);
+		switch (USART->NO_stop_bits) {
+		case USART_1_STOP_BITS:
+			break;
+		case USART_2_STOP_BITS:
+			UCSRC|=(1<<URSEL|1<<USBS);
+			break;
+#if USART_INT_TX==TRUE
+			sei();
+			USART_TX_INT_ENABLE();
+			UASRT_TX_callback_ptr=USART->UASRT_TX_callback;
+	#endif
+#if USART_INT_RX==TRUE
+			sei();
+			USART_RX_INT_ENABLE();
+			UASRT_RX_callback_ptr=USART->UASRT_RX_callback;
+#endif
 		USART_TX_ENABLE();
+		USART_RX_ENABLE();
+		}
 	}
-	return ret;
+	return Err_state;
 }
 
-static Bool USART_character_size(USART_CONFIG_t *USART)
+
+uint8 Mcal_Usart_send(USART_Config_t *USART,uint8 Data)
 {
-	Bool ret = E_OK;
-	if (NULL == USART)
-		ret = E_NOK;
+	uint8 Err_state = E_OK;
+	if (USART == NULL)
+		Err_state = E_NOK;
 	else {
-		switch(USART->Data_Size)
+		uint8 Parity_bit=0;
+		switch(USART->Buff_size)
 		{
-			USSCRC_SEL();
-			case USART_5BITS:
-				CLEAR_BIT(UCSRB,UCSZ2);
-				CLEAR_BIT(UCSRC,UCSZ0);
-				CLEAR_BIT(UCSRC,UCSZ1);
-				break;
-			case USART_6BITS:
-				CLEAR_BIT(UCSRB,UCSZ2);
-				SET_BIT(UCSRC,UCSZ0);
-				CLEAR_BIT(UCSRC,UCSZ1);
-				break;
-			case USART_7BITS:
-				CLEAR_BIT(UCSRB,UCSZ2);
-				CLEAR_BIT(UCSRC,UCSZ0);
-				SET_BIT(UCSRC,UCSZ1);
-				break;
-			case USART_8BITS:
-				CLEAR_BIT(UCSRB,UCSZ2);
-				SET_BIT(UCSRC,UCSZ0);
-				SET_BIT(UCSRC,UCSZ1);
-				break;
-			case USART_9BITS:
-				SET_BIT(UCSRB,UCSZ2);
-				SET_BIT(UCSRC,UCSZ0);
-				SET_BIT(UCSRC,UCSZ1);
-				break;
+			case USART_DATA_9_BITS:
+			{
+				switch(USART->P_Mode)
+				{
+				case USART_PARITY_EVEN:
+					Parity_bit = (READ_BIT(Data, 7)) ^ (READ_BIT(Data, 6))
+						^ (READ_BIT(Data, 5)) ^ (READ_BIT(Data, 4))
+						^ (READ_BIT(Data, 3)) ^ (READ_BIT(Data, 2))
+						^ (READ_BIT(Data, 1)) ^ (READ_BIT(Data, 0));
+					while (USART_BUFFER_NEMPTY());
+					WRITE_BIT(UCSRB,TXB8,Parity_bit);
+					UDR=Data;
+					break;
+				case USART_PARITY_ODD:
+						Parity_bit = !((READ_BIT(Data, 7)) ^ (READ_BIT(Data, 6))
+						^ (READ_BIT(Data, 5)) ^ (READ_BIT(Data, 4))
+						^ (READ_BIT(Data, 3)) ^ (READ_BIT(Data, 2))
+						^ (READ_BIT(Data, 1)) ^ (READ_BIT(Data, 0)));
+						while (USART_BUFFER_NEMPTY());
+						WRITE_BIT(UCSRB,TXB8,Parity_bit);
+						UDR = Data;
+						break;
+				default:
+					break;
+				}
+			}
 			default:
-				ret=E_NOK;
+				while (USART_BUFFER_NEMPTY());
+						UDR = Data ;
+				break;
 		}
 	}
-	return ret;
+	return Err_state;
 }
 
-static Bool USART_Parity_set(USART_CONFIG_t *USART)
+uint8 Mcal_Usart_send_string(USART_Config_t *USART,uint8* Data)
 {
-	Bool ret=E_OK;
-	switch(USART->Parity)
-	{
-		case USART_PARITY_DISABLE:
-			CLEAR_BIT(UCSRC,UPM0);
-			CLEAR_BIT(UCSRC,UPM1);
-			break;
-		case USART_PARITY_ENABLE_EVEN:
-			CLEAR_BIT(UCSRC,UPM0);
-			SET_BIT(UCSRC,UPM1);
-			break;
-		case USART_PARITY_ENABLE_ODD:
-			SET_BIT(UCSRC,UPM0);
-			SET_BIT(UCSRC,UPM1);
-			break;
-		default:
-			ret=E_NOK;
-	}
-	return ret;
-}
-
-static Bool USART_STOPbits_set(USART_CONFIG_t *USART)
-{
-	Bool ret=E_OK;
-	switch(USART->USART_NO_STOPBITS)
-	{
-		case USART_TWO_STOP_BITS:
-			USART_TWO_STOP_BITS_();
-			break;
-		case USART_ONE_STOP_BIT:
-			USART_ONE_STOP_BIT_();
-			break;
-		default:
-			ret=E_NOK;
-	}
-	return ret;
-}
-
-static Bool USART_BuadRate_set(USART_CONFIG_t *USART)
-{
-	Bool ret=E_OK;
-	uint16 Baud_r;
-	if (NULL == USART)
-		ret = E_NOK;
-	else
-	{
-		switch(USART->USART_D2X_ENALBE)
+	uint8 Err_state = E_OK;
+	if (USART == NULL)
+		Err_state = E_NOK;
+	else {
+		uint8 i=0;
+		while(*(Data+i)!='\0')
 		{
-			UBBRH_SEL();
-			case USART_DOUBLE_SPEED_ENABLE:
-				Baud_r=((F_CPU)/(8UL*USART->Baudrate))-1;
-				UBRRL=(uint8)(Baud_r>>8);
-				UBRRH=(uint8)Baud_r;
-				break;
-			case USART_DOUBLE_SPEED_DISABLE:
-				Baud_r=((F_CPU)/(16UL*USART->Baudrate))-1;
-				UBRRL=(uint8)(Baud_r>>8);
-				UBRRH=(uint8)Baud_r;
-				break;
-			default:
-				ret = E_NOK;
+			Mcal_Usart_send(USART,*(Data+i));
+			i++;
 		}
 	}
-	return ret;
+	return Err_state;
 }
 
-Bool USART_init(USART_CONFIG_t *USART)
+uint8 Mcal_Usart_rx(USART_Config_t *USART,uint8 *Data)
 {
-	Bool ret=E_OK;
-	if(NULL==USART)
-		ret=E_NOK;
-	else
-	{
-		USART_DISABLE();
-		USART_ASYNC_MODE();
-		ret=USART_Double_speed_enable(USART);
-		ret=USART_character_size(USART);
-		ret=USART_Parity_set(USART);
-		ret=USART_STOPbits_set(USART);
-		ret=USART_BuadRate_set(USART);
-#if USART_INTERRUPT_ENABLE==FEATURE_ENABLE
-		USART_TX_CLEAR_FLAG();
-		USART_RX_CLEAR_FLAG();
-
-		GLOBAL_INT_ENABLE();
-		USART_TX_INT_ENABLE();
-		USART_RX_INT_ENABLE();
-
-		INT_TxCallback_handler=USART->INT_Tx_handler;
-		INT_RxCallabck_handler=USART->INT_Rx_handler;
-#endif
-		ret=USART_Full_duplex(USART);
+	uint8 Err_state = E_OK;
+	if (USART == NULL)
+			Err_state = E_NOK;
+	else {
+		while (!READ_BIT(UCSRA , RXC));/* Wait till data is received */
+		*Data=UDR;			/* Return the byte*/
 	}
-	return ret;
+	return Err_state;
 }
 
-Bool USART_send(uint8 data)
+uint8 Usart_rx_string(USART_Config_t *USART,uint8 *Data)
 {
-	Bool ret=E_OK;
-	while(BIT_IS_CLEAR(UCSRA,UDRE));
-	UDR=data;
-	return ret;
-}
-
-Bool USART_send_non_polling(uint8 data)
-{
-	Bool ret=E_OK;
-	if(BIT_IS_SET(UCSRA,UDRE))
-	{
-	    UDR=data;
-	    ret=E_OK;
+	uint8 Err_state = E_OK;
+	if (USART == NULL)
+		Err_state = E_NOK;
+	else {
+			uint8 i = 0;
+			while (*(Data + i) != '\0') {
+				Mcal_Usart_rx(USART,Data+i);
+				i++;
+			}
 	}
-	else
-		ret=E_NOK;
-	return ret;
+	return Err_state;
 }
 
-Bool USART_send_block(uint8 *data,uint8 size)
-{
-	Bool ret=E_OK;
-	uint8 Bytes_sent=0;
-	while(Bytes_sent<size)
-	{
-		ret=USART_send(*(data+Bytes_sent));
-		Bytes_sent++;
-	}
-	return ret;
-}
-
-Bool USART_send_string(uint8 *data)
-{
-	Bool ret=E_OK;
-	uint8 Bytes_sent = 0;
-	while (*(data+Bytes_sent)) {
-		ret=USART_send(*(data + Bytes_sent));
-		Bytes_sent++;
-	}
-	return ret;
-}
-
-Bool USART_recieve(uint8 *data)
-{
-	Bool ret = E_OK;
-	while (BIT_IS_CLEAR(UCSRA,RXC));
-	*data=UDR;
-	return ret;
-}
-
-Bool USART_recieve_non_polling(uint8 *data)
-{
-	Bool ret = E_OK;
-	if (BIT_IS_SET(UCSRA, RXC))
-	{
-		*data = UDR;
-		ret=E_OK;
-	}
-	else
-		ret=E_NOK;
-	return ret;
-}
-
-Bool USART_recieve_string(uint8 *data)
-{
-	Bool ret=E_OK;
-	uint8 Byte_RX=0;
-	ret=USART_recieve(data+Byte_RX);
-	while(*(data+Byte_RX)!='#')
-	{
-		Byte_RX++;
-		ret=USART_recieve(data+Byte_RX);
-	}
-	*(data+Byte_RX)='\0';
-	return ret;
-}
 
 void USART_TX_ISR()
 {
 #if USART_INTERRUPT_ENABLE==FEATURE_ENABLE
 	USART_TX_CLEAR_FLAG();
-	if(INT_TxCallback_handler)
-		INT_TxCallback_handler();
+	if(UASRT_TX_callback_ptr)
+		UASRT_TX_callback_ptr();
 #endif
 }
 
@@ -282,7 +207,7 @@ void USART_RX_ISR()
 {
 #if USART_INTERRUPT_ENABLE==FEATURE_ENABLE
 	USART_RX_CLEAR_FLAG();
-	if (INT_RxCallback_handler)
-		INT_RxCallback_handler();
+	if (UASRT_RX_callback_ptr)
+		UASRT_RX_callback_ptr();
 #endif
 }
