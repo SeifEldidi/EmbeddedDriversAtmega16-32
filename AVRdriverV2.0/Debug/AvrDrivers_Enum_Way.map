@@ -1,0 +1,1156 @@
+Archive member included because of file (symbol)
+
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                              ./ECAL/Ecual_Ultrasonic.o (__mulsi3)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                              ./ECAL/Ecual_rtc.o (__udivmodqi4)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                              ./MCAL/BitBangeUart.o (__udivmodhi4)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+                              ./MCAL/mcal_timer0.o (__divmodhi4)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                              ./MCAL/BitBangeUart.o (__udivmodsi4)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                              ./ECAL/Ecual_lcd.o (__divmodsi4)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./MCAL/Mcal_gpio.o (__do_copy_data)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./MCAL/BitBangeUart.o (__do_clear_bss)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+                              ./ECAL/Ecual_lcd.o (__subsf3)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+                              ./ECAL/Ecual_lcd.o (__mulsf3)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+                              ./ECAL/Ecual_lcd.o (__floatsisf)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+                              ./ECAL/Ecual_lcd.o (__fixsfsi)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+                              h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o) (__thenan_sf)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                              h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o) (__prologue_saves__)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                              h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o) (__epilogue_restores__)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+                              h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o) (__clzsi2)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+                              h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o) (__pack_f)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+                              h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o) (__unpack_f)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+                              h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o) (__clz_tab)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strcat.o)
+                              ./ECAL/Ecual_lcd.o (strcat)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strncat.o)
+                              ./ECAL/Ecual_lcd.o (strncat)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o)
+                              ./ECAL/Ecual_lcd.o (sprintf)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                              h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o) (vfprintf)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                              h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (strnlen_P)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                              h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (strnlen)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(fputc.o)
+                              h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (fputc)
+h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                              h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o) (__ultoa_invert)
+
+Allocating common symbols
+Common symbol       size              file
+
+TCNT1_Val           0x2               ./MCAL/BitBangeUart.o
+Str                 0x19              ./ECAL/Ecual_lcd.o
+Int_global_cntr     0x4               ./ECAL/Ecual_DHT11.o
+OLD_humid_high      0x1               ./ECAL/Ecual_DHT11.o
+OLD_temp_high       0x1               ./ECAL/Ecual_DHT11.o
+sTATE               0x1               ./MCAL/BitBangeUart.o
+Arg                 0x4               ./ECAL/Ecual_lcd.o
+OLD_temp_low        0x1               ./ECAL/Ecual_DHT11.o
+OLD_humid_low       0x1               ./ECAL/Ecual_DHT11.o
+OV_count            0x4               ./ECAL/Ecual_Ultrasonic.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./MCAL/BitBangeUart.o
+LOAD ./MCAL/Mcal_External_Interrupts.o
+LOAD ./MCAL/Mcal_I2c.o
+LOAD ./MCAL/Mcal_gpio.o
+LOAD ./MCAL/mcal_adc.o
+LOAD ./MCAL/mcal_spi.o
+LOAD ./MCAL/mcal_timer0.o
+LOAD ./MCAL/mcal_uart.o
+LOAD ./ECAL/Ecual_DHT11.o
+LOAD ./ECAL/Ecual_Ultrasonic.o
+LOAD ./ECAL/Ecual_lcd.o
+LOAD ./ECAL/Ecual_max7219.o
+LOAD ./ECAL/Ecual_rtc.o
+LOAD ./main.o
+LOAD h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x388c
+ *(.vectors)
+ .vectors       0x00000000       0x54 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x8 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008e        0x4 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x0000008e                __vector_1
+                0x0000008e                __vector_12
+                0x0000008e                __bad_interrupt
+                0x0000008e                __vector_6
+                0x0000008e                __vector_3
+                0x0000008e                __vector_13
+                0x0000008e                __vector_17
+                0x0000008e                __vector_19
+                0x0000008e                __vector_7
+                0x0000008e                __vector_5
+                0x0000008e                __vector_4
+                0x0000008e                __vector_9
+                0x0000008e                __vector_2
+                0x0000008e                __vector_15
+                0x0000008e                __vector_8
+                0x0000008e                __vector_14
+                0x0000008e                __vector_10
+                0x0000008e                __vector_18
+                0x0000008e                __vector_20
+ .text          0x00000092        0x0 ./MCAL/BitBangeUart.o
+ .text          0x00000092        0x0 ./MCAL/Mcal_External_Interrupts.o
+ .text          0x00000092        0x0 ./MCAL/Mcal_I2c.o
+ .text          0x00000092        0x0 ./MCAL/Mcal_gpio.o
+ .text          0x00000092        0x0 ./MCAL/mcal_adc.o
+ .text          0x00000092        0x0 ./MCAL/mcal_spi.o
+ .text          0x00000092        0x0 ./MCAL/mcal_timer0.o
+ .text          0x00000092        0x0 ./MCAL/mcal_uart.o
+ .text          0x00000092        0x0 ./ECAL/Ecual_DHT11.o
+ .text          0x00000092        0x0 ./ECAL/Ecual_Ultrasonic.o
+ .text          0x00000092        0x0 ./ECAL/Ecual_lcd.o
+ .text          0x00000092        0x0 ./ECAL/Ecual_max7219.o
+ .text          0x00000092        0x0 ./ECAL/Ecual_rtc.o
+ .text          0x00000092        0x0 ./main.o
+ .text          0x00000092        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .text          0x00000092        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .text          0x00000092        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x00000092        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+ .text          0x00000092        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000092        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .text          0x00000092        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000092        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000092        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000092      0x354 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+                0x0000032a                __subsf3
+                0x0000038c                __addsf3
+ .text          0x000003e6      0x1f4 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+                0x000003e6                __mulsf3
+ .text          0x000005da       0xbc h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+                0x000005da                __floatsisf
+ .text          0x00000696       0xa8 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+                0x00000696                __fixsfsi
+ .text          0x0000073e        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .text          0x0000073e        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .text          0x0000073e        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .text          0x0000073e       0x9e h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+                0x0000073e                __clzsi2
+ .text          0x000007dc      0x1aa h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+                0x000007dc                __pack_f
+ .text          0x00000986       0xf0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+                0x00000986                __unpack_f
+ .text          0x00000a76        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+ .text          0x00000a76        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strcat.o)
+ .text          0x00000a76        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strncat.o)
+ .text          0x00000a76        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o)
+ .text          0x00000a76        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .text          0x00000a76        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+ .text          0x00000a76        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .text          0x00000a76        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .text          0x00000a76        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                0x00000a76                . = ALIGN (0x2)
+ *(.text.*)
+ .text.Usart_Delay
+                0x00000a76       0x18 ./MCAL/BitBangeUart.o
+ .text.BitBanged_Usart_RX
+                0x00000a8e      0x136 ./MCAL/BitBangeUart.o
+                0x00000a8e                BitBanged_Usart_RX
+ .text.BitBanged_Usart_RXStr
+                0x00000bc4       0x38 ./MCAL/BitBangeUart.o
+                0x00000bc4                BitBanged_Usart_RXStr
+ .text.BITBanged_Usart_Send
+                0x00000bfc      0x138 ./MCAL/BitBangeUart.o
+                0x00000bfc                BITBanged_Usart_Send
+ .text.BITBanged_Usart_SendStr
+                0x00000d34       0x36 ./MCAL/BitBangeUart.o
+                0x00000d34                BITBanged_Usart_SendStr
+ .text.BitBanged_Usart_init
+                0x00000d6a       0x8e ./MCAL/BitBangeUart.o
+                0x00000d6a                BitBanged_Usart_init
+ .text.__vector_11
+                0x00000df8       0x48 ./MCAL/Mcal_External_Interrupts.o
+                0x00000df8                __vector_11
+ .text.__vector_16
+                0x00000e40       0x48 ./MCAL/Mcal_External_Interrupts.o
+                0x00000e40                __vector_16
+ .text.Mcal_I2C_init
+                0x00000e88       0xb6 ./MCAL/Mcal_I2c.o
+                0x00000e88                Mcal_I2C_init
+ .text.Mcal_I2C_write_byte
+                0x00000f3e       0x66 ./MCAL/Mcal_I2c.o
+                0x00000f3e                Mcal_I2C_write_byte
+ .text.Mcal_I2C_write_buffer
+                0x00000fa4       0x84 ./MCAL/Mcal_I2c.o
+                0x00000fa4                Mcal_I2C_write_buffer
+ .text.Mcal_I2C_read_byte
+                0x00001028       0x9e ./MCAL/Mcal_I2c.o
+                0x00001028                Mcal_I2C_read_byte
+ .text.Mcal_I2C_read_buffer
+                0x000010c6       0xf2 ./MCAL/Mcal_I2c.o
+                0x000010c6                Mcal_I2C_read_buffer
+ .text.Mcal_GPIO_INIT
+                0x000011b8      0x146 ./MCAL/Mcal_gpio.o
+                0x000011b8                Mcal_GPIO_INIT
+ .text.Mcal_GPIO_WRITE
+                0x000012fe       0x66 ./MCAL/Mcal_gpio.o
+                0x000012fe                Mcal_GPIO_WRITE
+ .text.Mcal_GPIO_READ
+                0x00001364       0x36 ./MCAL/Mcal_gpio.o
+                0x00001364                Mcal_GPIO_READ
+ .text.Mcal_GPIO_TOGGLE
+                0x0000139a       0x36 ./MCAL/Mcal_gpio.o
+                0x0000139a                Mcal_GPIO_TOGGLE
+ .text.Mcal_GPIO_Init_PORT
+                0x000013d0       0x28 ./MCAL/Mcal_gpio.o
+                0x000013d0                Mcal_GPIO_Init_PORT
+ .text.Mcal_GPIO_WRITE_PORT
+                0x000013f8       0x28 ./MCAL/Mcal_gpio.o
+                0x000013f8                Mcal_GPIO_WRITE_PORT
+ .text.Mcal_GPIO_READ_PORT
+                0x00001420       0x2e ./MCAL/Mcal_gpio.o
+                0x00001420                Mcal_GPIO_READ_PORT
+ .text.ADC_init
+                0x0000144e       0x8a ./MCAL/mcal_adc.o
+                0x0000144e                ADC_init
+ .text.ADC_config_channel
+                0x000014d8       0x2c ./MCAL/mcal_adc.o
+                0x000014d8                ADC_config_channel
+ .text.ADC_Conversion_polling
+                0x00001504       0x90 ./MCAL/mcal_adc.o
+                0x00001504                ADC_Conversion_polling
+ .text.ADC_Conversion_interrupt
+                0x00001594       0x56 ./MCAL/mcal_adc.o
+                0x00001594                ADC_Conversion_interrupt
+ .text.ADC_ISR  0x000015ea       0x10 ./MCAL/mcal_adc.o
+                0x000015ea                ADC_ISR
+ .text.SPI_CONFIG
+                0x000015fa       0x96 ./MCAL/mcal_spi.o
+                0x000015fa                SPI_CONFIG
+ .text.SPI_SEND_BYTE
+                0x00001690        0x8 ./MCAL/mcal_spi.o
+                0x00001690                SPI_SEND_BYTE
+ .text.SPI_SEND_STR
+                0x00001698       0x10 ./MCAL/mcal_spi.o
+                0x00001698                SPI_SEND_STR
+ .text.SPI_RX_BYTE
+                0x000016a8        0xc ./MCAL/mcal_spi.o
+                0x000016a8                SPI_RX_BYTE
+ .text.SPI_RX_string
+                0x000016b4       0x1a ./MCAL/mcal_spi.o
+                0x000016b4                SPI_RX_string
+ .text.Mcal_TIMER0_set_duty
+                0x000016ce       0x14 ./MCAL/mcal_timer0.o
+                0x000016ce                Mcal_TIMER0_set_duty
+ .text.Mcal_Timer0_delay_polling
+                0x000016e2       0x26 ./MCAL/mcal_timer0.o
+                0x000016e2                Mcal_Timer0_delay_polling
+ .text.Mcal_Timer0_init
+                0x00001708      0x11a ./MCAL/mcal_timer0.o
+                0x00001708                Mcal_Timer0_init
+ .text.Mcal_Usart_init
+                0x00001822       0xd4 ./MCAL/mcal_uart.o
+                0x00001822                Mcal_Usart_init
+ .text.Mcal_Usart_send
+                0x000018f6      0x10c ./MCAL/mcal_uart.o
+                0x000018f6                Mcal_Usart_send
+ .text.Mcal_Usart_send_string
+                0x00001a02       0x3c ./MCAL/mcal_uart.o
+                0x00001a02                Mcal_Usart_send_string
+ .text.Mcal_Usart_rx
+                0x00001a3e       0x16 ./MCAL/mcal_uart.o
+                0x00001a3e                Mcal_Usart_rx
+ .text.Usart_rx_string
+                0x00001a54       0x26 ./MCAL/mcal_uart.o
+                0x00001a54                Usart_rx_string
+ .text.TIMER_ISR_Internal_2
+                0x00001a7a       0x28 ./ECAL/Ecual_DHT11.o
+                0x00001a7a                TIMER_ISR_Internal_2
+ .text.Ecual_DHT11_init
+                0x00001aa2        0x6 ./ECAL/Ecual_DHT11.o
+                0x00001aa2                Ecual_DHT11_init
+ .text.Ecual_DHT11_get_data
+                0x00001aa8      0x266 ./ECAL/Ecual_DHT11.o
+                0x00001aa8                Ecual_DHT11_get_data
+ .text.TIMER_ISR_internal
+                0x00001d0e       0x28 ./ECAL/Ecual_Ultrasonic.o
+                0x00001d0e                TIMER_ISR_internal
+ .text.Ecual_Ultrasonic_Read
+                0x00001d36      0x1f4 ./ECAL/Ecual_Ultrasonic.o
+                0x00001d36                Ecual_Ultrasonic_Read
+ .text.Ecual_Ultrasonic_Init
+                0x00001f2a       0x18 ./ECAL/Ecual_Ultrasonic.o
+                0x00001f2a                Ecual_Ultrasonic_Init
+ .text.convert_int_to_string
+                0x00001f42       0x6c ./ECAL/Ecual_lcd.o
+                0x00001f42                convert_int_to_string
+ .text.convert_short_to_string
+                0x00001fae       0x62 ./ECAL/Ecual_lcd.o
+                0x00001fae                convert_short_to_string
+ .text.convert_byte_to_string
+                0x00002010       0x64 ./ECAL/Ecual_lcd.o
+                0x00002010                convert_byte_to_string
+ .text.LCD_ENABLE_8BITS
+                0x00002074       0x2e ./ECAL/Ecual_lcd.o
+ .text.LCD_8BIT_SEND_CMD
+                0x000020a2       0x68 ./ECAL/Ecual_lcd.o
+                0x000020a2                LCD_8BIT_SEND_CMD
+ .text.LCD_8BIT_SET_POS
+                0x0000210a       0x36 ./ECAL/Ecual_lcd.o
+                0x0000210a                LCD_8BIT_SET_POS
+ .text.LCD_8BIT_SEND
+                0x00002140       0x68 ./ECAL/Ecual_lcd.o
+                0x00002140                LCD_8BIT_SEND
+ .text.LCD_8BIT_SEND_STRING
+                0x000021a8       0x3c ./ECAL/Ecual_lcd.o
+                0x000021a8                LCD_8BIT_SEND_STRING
+ .text.LCD_8BIT_SEND_STRING_POS
+                0x000021e4       0x26 ./ECAL/Ecual_lcd.o
+                0x000021e4                LCD_8BIT_SEND_STRING_POS
+ .text.LCD_8BIT_SEND_POS
+                0x0000220a       0x22 ./ECAL/Ecual_lcd.o
+                0x0000220a                LCD_8BIT_SEND_POS
+ .text.LCD_8bit_send_custom_character
+                0x0000222c       0x74 ./ECAL/Ecual_lcd.o
+                0x0000222c                LCD_8bit_send_custom_character
+ .text.LCD_SEND_4BITS
+                0x000022a0       0x58 ./ECAL/Ecual_lcd.o
+ .text.LCD_ENABLE_4BITS
+                0x000022f8       0x2e ./ECAL/Ecual_lcd.o
+ .text.LCD_4BIT_SEND_CMD
+                0x00002326       0x4c ./ECAL/Ecual_lcd.o
+                0x00002326                LCD_4BIT_SEND_CMD
+ .text.LCD_4BIT_SET_POS
+                0x00002372       0x36 ./ECAL/Ecual_lcd.o
+                0x00002372                LCD_4BIT_SET_POS
+ .text.LCD_4BIT_SEND
+                0x000023a8       0x4c ./ECAL/Ecual_lcd.o
+                0x000023a8                LCD_4BIT_SEND
+ .text.LCD_4BIT_SEND_POS
+                0x000023f4       0x22 ./ECAL/Ecual_lcd.o
+                0x000023f4                LCD_4BIT_SEND_POS
+ .text.LCD_4bit_send_custom_character
+                0x00002416       0x72 ./ECAL/Ecual_lcd.o
+                0x00002416                LCD_4bit_send_custom_character
+ .text.LCD_4BIT_SEND_STRING
+                0x00002488       0x3c ./ECAL/Ecual_lcd.o
+                0x00002488                LCD_4BIT_SEND_STRING
+ .text.LCD_4BIT_SEND_STRING_POS
+                0x000024c4       0x26 ./ECAL/Ecual_lcd.o
+                0x000024c4                LCD_4BIT_SEND_STRING_POS
+ .text.LCD_8BIT_INIT
+                0x000024ea      0x10e ./ECAL/Ecual_lcd.o
+                0x000024ea                LCD_8BIT_INIT
+ .text.LCD_4BIT_INIT
+                0x000025f8      0x10e ./ECAL/Ecual_lcd.o
+                0x000025f8                LCD_4BIT_INIT
+ .text.LCD_PRINT_4BITS
+                0x00002706      0x292 ./ECAL/Ecual_lcd.o
+                0x00002706                LCD_PRINT_4BITS
+ .text.Convert_digs
+                0x00002998       0x6e ./ECAL/Ecual_max7219.o
+ .text.no_digits
+                0x00002a06       0x32 ./ECAL/Ecual_max7219.o
+ .text.MAX7219_SEND_Data
+                0x00002a38       0x18 ./ECAL/Ecual_max7219.o
+                0x00002a38                MAX7219_SEND_Data
+ .text.CLEAR_DISPLAY
+                0x00002a50       0x42 ./ECAL/Ecual_max7219.o
+ .text.MAX7219Disp_float
+                0x00002a92       0xd4 ./ECAL/Ecual_max7219.o
+                0x00002a92                MAX7219Disp_float
+ .text.MAX7219Disp_string
+                0x00002b66       0x5c ./ECAL/Ecual_max7219.o
+                0x00002b66                MAX7219Disp_string
+ .text.MAX7219Disp_Number
+                0x00002bc2       0xd2 ./ECAL/Ecual_max7219.o
+                0x00002bc2                MAX7219Disp_Number
+ .text.MAX7219_INIT
+                0x00002c94       0x30 ./ECAL/Ecual_max7219.o
+                0x00002c94                MAX7219_INIT
+ .text.Max7219_Send_DArr
+                0x00002cc4       0x40 ./ECAL/Ecual_max7219.o
+ .text.MAX7219_INIT_ARR
+                0x00002d04       0x36 ./ECAL/Ecual_max7219.o
+                0x00002d04                MAX7219_INIT_ARR
+ .text.Max7219_Send_DArr_Ddata
+                0x00002d3a       0xb4 ./ECAL/Ecual_max7219.o
+                0x00002d3a                Max7219_Send_DArr_Ddata
+ .text.MAX7219Disp_float_num
+                0x00002dee      0x130 ./ECAL/Ecual_max7219.o
+                0x00002dee                MAX7219Disp_float_num
+ .text.ECUAL_DS1307_Read_Time
+                0x00002f1e       0xa6 ./ECAL/Ecual_rtc.o
+                0x00002f1e                ECUAL_DS1307_Read_Time
+ .text.ECUAL_DS1307_Set_date
+                0x00002fc4       0x8a ./ECAL/Ecual_rtc.o
+                0x00002fc4                ECUAL_DS1307_Set_date
+ .text.ECUAL_DS1307_Set_Time
+                0x0000304e       0xb8 ./ECAL/Ecual_rtc.o
+                0x0000304e                ECUAL_DS1307_Set_Time
+ .text.ECUAL_DS1307_Init
+                0x00003106       0x50 ./ECAL/Ecual_rtc.o
+                0x00003106                ECUAL_DS1307_Init
+ .text.main_init
+                0x00003156        0x2 ./main.o
+                0x00003156                main_init
+ .text.main     0x00003158       0x2c ./main.o
+                0x00003158                main
+ .text.libgcc   0x00003184       0x3e h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                0x00003184                __mulsi3
+ .text.libgcc   0x000031c2       0x18 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+                0x000031c2                __udivmodqi4
+ .text.libgcc   0x000031da       0x28 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x000031da                __udivmodhi4
+ .text.libgcc   0x00003202       0x26 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+                0x00003202                __divmodhi4
+                0x00003202                _div
+ .text.libgcc   0x00003228       0x44 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00003228                __udivmodsi4
+ .text.libgcc   0x0000326c       0x36 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                0x0000326c                __divmodsi4
+ .text.libgcc   0x000032a2        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x000032a2        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000032a2        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x000032a2       0x38 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x000032a2                __prologue_saves__
+ .text.libgcc   0x000032da       0x36 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x000032da                __epilogue_restores__
+ .text.avr-libc
+                0x00003310       0x16 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strcat.o)
+                0x00003310                strcat
+ .text.avr-libc
+                0x00003326       0x20 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strncat.o)
+                0x00003326                strncat
+ .text.avr-libc
+                0x00003346       0x48 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o)
+                0x00003346                sprintf
+ .text.avr-libc
+                0x0000338e      0x3ba h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                0x0000338e                vfprintf
+ .text.avr-libc
+                0x00003748       0x16 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                0x00003748                strnlen_P
+ .text.avr-libc
+                0x0000375e       0x16 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                0x0000375e                strnlen
+ .text.avr-libc
+                0x00003774       0x58 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(fputc.o)
+                0x00003774                fputc
+ .text.avr-libc
+                0x000037cc       0xbc h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                0x000037cc                __ultoa_invert
+                0x00003888                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00003888        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00003888                exit
+                0x00003888                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00003888        0x4 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000388c                _etext = .
+
+.data           0x00800060      0x144 load address 0x0000388c
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./MCAL/BitBangeUart.o
+ .data          0x00800060        0x0 ./MCAL/Mcal_External_Interrupts.o
+ .data          0x00800060        0x0 ./MCAL/Mcal_I2c.o
+ .data          0x00800060        0x0 ./MCAL/Mcal_gpio.o
+ .data          0x00800060        0x0 ./MCAL/mcal_adc.o
+ .data          0x00800060        0x0 ./MCAL/mcal_spi.o
+ .data          0x00800060        0x0 ./MCAL/mcal_timer0.o
+ .data          0x00800060        0x0 ./MCAL/mcal_uart.o
+ .data          0x00800060        0x0 ./ECAL/Ecual_DHT11.o
+ .data          0x00800060        0x0 ./ECAL/Ecual_Ultrasonic.o
+ .data          0x00800060        0xf ./ECAL/Ecual_lcd.o
+ .data          0x0080006f        0x0 ./ECAL/Ecual_max7219.o
+ .data          0x0080006f        0x0 ./ECAL/Ecual_rtc.o
+ .data          0x0080006f        0x0 ./main.o
+ .data          0x0080006f        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .data          0x0080006f        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .data          0x0080006f        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x0080006f        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+ .data          0x0080006f        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x0080006f        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .data          0x0080006f        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x0080006f        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x0080006f        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x0080006f        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .data          0x0080006f        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .data          0x0080006f        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .data          0x0080006f        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .data          0x0080006f        0x8 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+                0x0080006f                __thenan_sf
+ .data          0x00800077        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .data          0x00800077        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .data          0x00800077        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .data          0x00800077        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .data          0x00800077        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .data          0x00800077      0x100 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+                0x00800077                __clz_tab
+ .data          0x00800177        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strcat.o)
+ .data          0x00800177        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strncat.o)
+ .data          0x00800177        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o)
+ .data          0x00800177        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .data          0x00800177        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+ .data          0x00800177        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .data          0x00800177        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .data          0x00800177        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+ *(.data*)
+ .data.DDRX_REGS
+                0x00800177        0x8 ./MCAL/Mcal_gpio.o
+                0x00800177                DDRX_REGS
+ .data.PORTX_REGS
+                0x0080017f        0x8 ./MCAL/Mcal_gpio.o
+                0x0080017f                PORTX_REGS
+ .data.PINX_REGS
+                0x00800187        0x8 ./MCAL/Mcal_gpio.o
+                0x00800187                PINX_REGS
+ .data.Usart    0x0080018f        0x7 ./main.o
+                0x0080018f                Usart
+ .data.Data     0x00800196        0x1 ./main.o
+                0x00800196                Data
+ *(.rodata)
+ *(.rodata*)
+ .rodata.MAX721DIG
+                0x00800197        0xd ./ECAL/Ecual_max7219.o
+ *(.gnu.linkonce.d*)
+                0x008001a4                . = ALIGN (0x2)
+                0x008001a4                _edata = .
+                0x008001a4                PROVIDE (__data_end, .)
+
+.bss            0x008001a4       0x3c
+                0x008001a4                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x008001a4        0x0 ./MCAL/BitBangeUart.o
+ .bss           0x008001a4        0x0 ./MCAL/Mcal_External_Interrupts.o
+ .bss           0x008001a4        0x0 ./MCAL/Mcal_I2c.o
+ .bss           0x008001a4        0x0 ./MCAL/Mcal_gpio.o
+ .bss           0x008001a4        0x0 ./MCAL/mcal_adc.o
+ .bss           0x008001a4        0x0 ./MCAL/mcal_spi.o
+ .bss           0x008001a4        0x0 ./MCAL/mcal_timer0.o
+ .bss           0x008001a4        0x0 ./MCAL/mcal_uart.o
+ .bss           0x008001a4        0x0 ./ECAL/Ecual_DHT11.o
+ .bss           0x008001a4        0x0 ./ECAL/Ecual_Ultrasonic.o
+ .bss           0x008001a4        0x0 ./ECAL/Ecual_lcd.o
+ .bss           0x008001a4        0x0 ./ECAL/Ecual_max7219.o
+ .bss           0x008001a4        0x0 ./ECAL/Ecual_rtc.o
+ .bss           0x008001a4        0x0 ./main.o
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodqi4.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodhi4.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strcat.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strncat.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(sprintf.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(strnlen.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .bss           0x008001a4        0x0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+ *(.bss*)
+ .bss.ADC_call_ptr
+                0x008001a4        0x2 ./MCAL/mcal_adc.o
+ .bss.TIMER0_OVF_callback
+                0x008001a6        0x2 ./MCAL/mcal_timer0.o
+ .bss.Data_arr  0x008001a8        0x6 ./ECAL/Ecual_max7219.o
+                0x008001a8                Data_arr
+ .bss.Data_arr_2
+                0x008001ae        0x6 ./ECAL/Ecual_max7219.o
+                0x008001ae                Data_arr_2
+ *(COMMON)
+ COMMON         0x008001b4        0x3 ./MCAL/BitBangeUart.o
+                0x008001b4                TCNT1_Val
+                0x008001b6                sTATE
+ COMMON         0x008001b7        0x8 ./ECAL/Ecual_DHT11.o
+                0x008001b7                Int_global_cntr
+                0x008001bb                OLD_humid_high
+                0x008001bc                OLD_temp_high
+                0x008001bd                OLD_temp_low
+                0x008001be                OLD_humid_low
+ COMMON         0x008001bf        0x4 ./ECAL/Ecual_Ultrasonic.o
+                0x008001bf                OV_count
+ COMMON         0x008001c3       0x1d ./ECAL/Ecual_lcd.o
+                0x008001c3                Str
+                0x008001dc                Arg
+                0x008001e0                PROVIDE (__bss_end, .)
+                0x0000388c                __data_load_start = LOADADDR (.data)
+                0x000039d0                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008001e0        0x0
+                0x008001e0                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008001e0                PROVIDE (__noinit_end, .)
+                0x008001e0                _end = .
+                0x008001e0                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x4d8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x48 ./MCAL/BitBangeUart.o
+ .debug_aranges
+                0x00000048       0x28 ./MCAL/Mcal_External_Interrupts.o
+ .debug_aranges
+                0x00000070       0x40 ./MCAL/Mcal_I2c.o
+ .debug_aranges
+                0x000000b0       0x50 ./MCAL/Mcal_gpio.o
+ .debug_aranges
+                0x00000100       0x40 ./MCAL/mcal_adc.o
+ .debug_aranges
+                0x00000140       0x40 ./MCAL/mcal_spi.o
+ .debug_aranges
+                0x00000180       0x30 ./MCAL/mcal_timer0.o
+ .debug_aranges
+                0x000001b0       0x40 ./MCAL/mcal_uart.o
+ .debug_aranges
+                0x000001f0       0x30 ./ECAL/Ecual_DHT11.o
+ .debug_aranges
+                0x00000220       0x30 ./ECAL/Ecual_Ultrasonic.o
+ .debug_aranges
+                0x00000250       0xd0 ./ECAL/Ecual_lcd.o
+ .debug_aranges
+                0x00000320       0x78 ./ECAL/Ecual_max7219.o
+ .debug_aranges
+                0x00000398       0x38 ./ECAL/Ecual_rtc.o
+ .debug_aranges
+                0x000003d0       0x28 ./main.o
+ .debug_aranges
+                0x000003f8       0x20 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_aranges
+                0x00000418       0x20 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_aranges
+                0x00000438       0x20 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .debug_aranges
+                0x00000458       0x20 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_aranges
+                0x00000478       0x20 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .debug_aranges
+                0x00000498       0x20 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_aranges
+                0x000004b8       0x20 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+
+.debug_pubnames
+                0x00000000      0x9d6
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0xa9 ./MCAL/BitBangeUart.o
+ .debug_pubnames
+                0x000000a9       0x32 ./MCAL/Mcal_External_Interrupts.o
+ .debug_pubnames
+                0x000000db       0x86 ./MCAL/Mcal_I2c.o
+ .debug_pubnames
+                0x00000161       0xd5 ./MCAL/Mcal_gpio.o
+ .debug_pubnames
+                0x00000236       0x7a ./MCAL/mcal_adc.o
+ .debug_pubnames
+                0x000002b0       0x66 ./MCAL/mcal_spi.o
+ .debug_pubnames
+                0x00000316       0x5e ./MCAL/mcal_timer0.o
+ .debug_pubnames
+                0x00000374       0x7b ./MCAL/mcal_uart.o
+ .debug_pubnames
+                0x000003ef       0xb5 ./ECAL/Ecual_DHT11.o
+ .debug_pubnames
+                0x000004a4       0x6a ./ECAL/Ecual_Ultrasonic.o
+ .debug_pubnames
+                0x0000050e      0x203 ./ECAL/Ecual_lcd.o
+ .debug_pubnames
+                0x00000711       0xe4 ./ECAL/Ecual_max7219.o
+ .debug_pubnames
+                0x000007f5       0x77 ./ECAL/Ecual_rtc.o
+ .debug_pubnames
+                0x0000086c       0x3c ./main.o
+ .debug_pubnames
+                0x000008a8       0x2c h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_pubnames
+                0x000008d4       0x1f h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_pubnames
+                0x000008f3       0x22 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .debug_pubnames
+                0x00000915       0x20 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_pubnames
+                0x00000935       0x22 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .debug_pubnames
+                0x00000957       0x1f h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .debug_pubnames
+                0x00000976       0x1f h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_pubnames
+                0x00000995       0x21 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .debug_pubnames
+                0x000009b6       0x20 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+
+.debug_info     0x00000000     0x5114
+ *(.debug_info)
+ .debug_info    0x00000000      0x3fc ./MCAL/BitBangeUart.o
+ .debug_info    0x000003fc       0xaa ./MCAL/Mcal_External_Interrupts.o
+ .debug_info    0x000004a6      0x36e ./MCAL/Mcal_I2c.o
+ .debug_info    0x00000814      0x3bf ./MCAL/Mcal_gpio.o
+ .debug_info    0x00000bd3      0x380 ./MCAL/mcal_adc.o
+ .debug_info    0x00000f53      0x235 ./MCAL/mcal_spi.o
+ .debug_info    0x00001188      0x2a6 ./MCAL/mcal_timer0.o
+ .debug_info    0x0000142e      0x3d6 ./MCAL/mcal_uart.o
+ .debug_info    0x00001804      0x511 ./ECAL/Ecual_DHT11.o
+ .debug_info    0x00001d15      0x4c2 ./ECAL/Ecual_Ultrasonic.o
+ .debug_info    0x000021d7      0xf39 ./ECAL/Ecual_lcd.o
+ .debug_info    0x00003110      0x591 ./ECAL/Ecual_max7219.o
+ .debug_info    0x000036a1      0x2f1 ./ECAL/Ecual_rtc.o
+ .debug_info    0x00003992      0x1b0 ./main.o
+ .debug_info    0x00003b42      0x47a h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_info    0x00003fbc      0x485 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_info    0x00004441      0x207 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .debug_info    0x00004648      0x2b0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_info    0x000048f8      0x12c h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .debug_info    0x00004a24      0x117 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .debug_info    0x00004b3b      0x2df h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_info    0x00004e1a      0x251 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .debug_info    0x0000506b       0xa9 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000     0x2028
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x13e ./MCAL/BitBangeUart.o
+ .debug_abbrev  0x0000013e       0x43 ./MCAL/Mcal_External_Interrupts.o
+ .debug_abbrev  0x00000181      0x159 ./MCAL/Mcal_I2c.o
+ .debug_abbrev  0x000002da      0x12e ./MCAL/Mcal_gpio.o
+ .debug_abbrev  0x00000408      0x1c6 ./MCAL/mcal_adc.o
+ .debug_abbrev  0x000005ce      0x15a ./MCAL/mcal_spi.o
+ .debug_abbrev  0x00000728      0x10e ./MCAL/mcal_timer0.o
+ .debug_abbrev  0x00000836      0x189 ./MCAL/mcal_uart.o
+ .debug_abbrev  0x000009bf      0x208 ./ECAL/Ecual_DHT11.o
+ .debug_abbrev  0x00000bc7      0x1b8 ./ECAL/Ecual_Ultrasonic.o
+ .debug_abbrev  0x00000d7f      0x302 ./ECAL/Ecual_lcd.o
+ .debug_abbrev  0x00001081      0x1d8 ./ECAL/Ecual_max7219.o
+ .debug_abbrev  0x00001259      0x142 ./ECAL/Ecual_rtc.o
+ .debug_abbrev  0x0000139b       0xd2 ./main.o
+ .debug_abbrev  0x0000146d      0x1ea h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_abbrev  0x00001657      0x21b h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_abbrev  0x00001872      0x148 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .debug_abbrev  0x000019ba      0x17f h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_abbrev  0x00001b39       0xad h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .debug_abbrev  0x00001be6       0xc4 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .debug_abbrev  0x00001caa      0x1c0 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_abbrev  0x00001e6a      0x154 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .debug_abbrev  0x00001fbe       0x6a h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+
+.debug_line     0x00000000     0x512b
+ *(.debug_line)
+ .debug_line    0x00000000      0x498 ./MCAL/BitBangeUart.o
+ .debug_line    0x00000498      0x280 ./MCAL/Mcal_External_Interrupts.o
+ .debug_line    0x00000718      0x63a ./MCAL/Mcal_I2c.o
+ .debug_line    0x00000d52      0x3c4 ./MCAL/Mcal_gpio.o
+ .debug_line    0x00001116      0x405 ./MCAL/mcal_adc.o
+ .debug_line    0x0000151b      0x3eb ./MCAL/mcal_spi.o
+ .debug_line    0x00001906      0x3e9 ./MCAL/mcal_timer0.o
+ .debug_line    0x00001cef      0x3fa ./MCAL/mcal_uart.o
+ .debug_line    0x000020e9      0x52e ./ECAL/Ecual_DHT11.o
+ .debug_line    0x00002617      0x408 ./ECAL/Ecual_Ultrasonic.o
+ .debug_line    0x00002a1f      0xb16 ./ECAL/Ecual_lcd.o
+ .debug_line    0x00003535      0x708 ./ECAL/Ecual_max7219.o
+ .debug_line    0x00003c3d      0x3fa ./ECAL/Ecual_rtc.o
+ .debug_line    0x00004037      0x548 ./main.o
+ .debug_line    0x0000457f      0x2af h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_line    0x0000482e      0x239 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_line    0x00004a67      0x135 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .debug_line    0x00004b9c      0x109 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_line    0x00004ca5       0x90 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .debug_line    0x00004d35       0xa5 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .debug_line    0x00004dda      0x18a h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_line    0x00004f64      0x14b h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .debug_line    0x000050af       0x7c h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+
+.debug_frame    0x00000000      0x730
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x70 ./MCAL/BitBangeUart.o
+ .debug_frame   0x00000070       0x30 ./MCAL/Mcal_External_Interrupts.o
+ .debug_frame   0x000000a0       0x60 ./MCAL/Mcal_I2c.o
+ .debug_frame   0x00000100       0x80 ./MCAL/Mcal_gpio.o
+ .debug_frame   0x00000180       0x60 ./MCAL/mcal_adc.o
+ .debug_frame   0x000001e0       0x60 ./MCAL/mcal_spi.o
+ .debug_frame   0x00000240       0x40 ./MCAL/mcal_timer0.o
+ .debug_frame   0x00000280       0x60 ./MCAL/mcal_uart.o
+ .debug_frame   0x000002e0       0x40 ./ECAL/Ecual_DHT11.o
+ .debug_frame   0x00000320       0x40 ./ECAL/Ecual_Ultrasonic.o
+ .debug_frame   0x00000360      0x180 ./ECAL/Ecual_lcd.o
+ .debug_frame   0x000004e0       0xd0 ./ECAL/Ecual_max7219.o
+ .debug_frame   0x000005b0       0x50 ./ECAL/Ecual_rtc.o
+ .debug_frame   0x00000600       0x30 ./main.o
+ .debug_frame   0x00000630       0x40 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_frame   0x00000670       0x20 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_frame   0x00000690       0x20 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .debug_frame   0x000006b0       0x20 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_frame   0x000006d0       0x20 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .debug_frame   0x000006f0       0x20 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_frame   0x00000710       0x20 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+
+.debug_str      0x00000000     0x1485
+ *(.debug_str)
+ .debug_str     0x00000000      0x21e ./MCAL/BitBangeUart.o
+                                0x26c (size before relaxing)
+ .debug_str     0x0000021e       0x3b ./MCAL/Mcal_External_Interrupts.o
+                                0x101 (size before relaxing)
+ .debug_str     0x00000259      0x10a ./MCAL/Mcal_I2c.o
+                                0x207 (size before relaxing)
+ .debug_str     0x00000363      0x159 ./MCAL/Mcal_gpio.o
+                                0x28f (size before relaxing)
+ .debug_str     0x000004bc      0x173 ./MCAL/mcal_adc.o
+                                0x250 (size before relaxing)
+ .debug_str     0x0000062f       0x94 ./MCAL/mcal_spi.o
+                                0x16a (size before relaxing)
+ .debug_str     0x000006c3      0x2d5 ./MCAL/mcal_timer0.o
+                                0x3ab (size before relaxing)
+ .debug_str     0x00000998      0x1e0 ./MCAL/mcal_uart.o
+                                0x2c8 (size before relaxing)
+ .debug_str     0x00000b78      0x118 ./ECAL/Ecual_DHT11.o
+                                0x485 (size before relaxing)
+ .debug_str     0x00000c90       0xf8 ./ECAL/Ecual_Ultrasonic.o
+                                0x490 (size before relaxing)
+ .debug_str     0x00000d88      0x290 ./ECAL/Ecual_lcd.o
+                                0x432 (size before relaxing)
+ .debug_str     0x00001018      0x15d ./ECAL/Ecual_max7219.o
+                                0x273 (size before relaxing)
+ .debug_str     0x00001175       0xbc ./ECAL/Ecual_rtc.o
+                                0x1df (size before relaxing)
+ .debug_str     0x00001231       0x19 ./main.o
+                                0x146 (size before relaxing)
+ .debug_str     0x0000124a      0x175 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+                                0x206 (size before relaxing)
+ .debug_str     0x000013bf       0x27 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+                                0x1bf (size before relaxing)
+ .debug_str     0x000013e6       0x1e h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+                                0x17b (size before relaxing)
+ .debug_str     0x00001404        0xa h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+                                0x19e (size before relaxing)
+ .debug_str     0x00000000      0x103 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .debug_str     0x0000140e       0x5c h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+                                0x111 (size before relaxing)
+ .debug_str     0x0000146a       0x10 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+                                0x19d (size before relaxing)
+ .debug_str     0x0000147a        0xb h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+                                0x17f (size before relaxing)
+ .debug_str     0x00000000       0xf4 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+
+.debug_loc      0x00000000     0x31a4
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x453 ./MCAL/BitBangeUart.o
+ .debug_loc     0x00000453      0x357 ./MCAL/Mcal_I2c.o
+ .debug_loc     0x000007aa      0x1e2 ./MCAL/Mcal_gpio.o
+ .debug_loc     0x0000098c      0x1bf ./MCAL/mcal_adc.o
+ .debug_loc     0x00000b4b       0xb6 ./MCAL/mcal_spi.o
+ .debug_loc     0x00000c01       0x8c ./MCAL/mcal_timer0.o
+ .debug_loc     0x00000c8d      0x2d0 ./MCAL/mcal_uart.o
+ .debug_loc     0x00000f5d      0x227 ./ECAL/Ecual_DHT11.o
+ .debug_loc     0x00001184      0x190 ./ECAL/Ecual_Ultrasonic.o
+ .debug_loc     0x00001314      0xe33 ./ECAL/Ecual_lcd.o
+ .debug_loc     0x00002147      0x64e ./ECAL/Ecual_max7219.o
+ .debug_loc     0x00002795      0x239 ./ECAL/Ecual_rtc.o
+ .debug_loc     0x000029ce      0x32a h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_loc     0x00002cf8      0x104 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_loc     0x00002dfc       0xac h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .debug_loc     0x00002ea8       0x7e h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_loc     0x00002f26       0x94 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .debug_loc     0x00002fba      0x13e h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_loc     0x000030f8       0xac h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+
+.debug_macinfo  0x00000000    0x4434b
+ *(.debug_macinfo)
+ .debug_macinfo
+                0x00000000     0x4798 ./MCAL/BitBangeUart.o
+ .debug_macinfo
+                0x00004798     0x47ca ./MCAL/Mcal_External_Interrupts.o
+ .debug_macinfo
+                0x00008f62     0x4d21 ./MCAL/Mcal_I2c.o
+ .debug_macinfo
+                0x0000dc83     0x4717 ./MCAL/Mcal_gpio.o
+ .debug_macinfo
+                0x0001239a     0x4ab1 ./MCAL/mcal_adc.o
+ .debug_macinfo
+                0x00016e4b     0x4c98 ./MCAL/mcal_spi.o
+ .debug_macinfo
+                0x0001bae3     0x4a7c ./MCAL/mcal_timer0.o
+ .debug_macinfo
+                0x0002055f     0x4b0a ./MCAL/mcal_uart.o
+ .debug_macinfo
+                0x00025069     0x4b20 ./ECAL/Ecual_DHT11.o
+ .debug_macinfo
+                0x00029b89     0x4afc ./ECAL/Ecual_Ultrasonic.o
+ .debug_macinfo
+                0x0002e685     0x50d8 ./ECAL/Ecual_lcd.o
+ .debug_macinfo
+                0x0003375d     0x50ae ./ECAL/Ecual_max7219.o
+ .debug_macinfo
+                0x0003880b     0x4efc ./ECAL/Ecual_rtc.o
+ .debug_macinfo
+                0x0003d707     0x6c44 ./main.o
+OUTPUT(AvrDrivers_Enum_Way.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000      0x450
+ .debug_ranges  0x00000000       0x40 ./MCAL/BitBangeUart.o
+ .debug_ranges  0x00000040       0x20 ./MCAL/Mcal_External_Interrupts.o
+ .debug_ranges  0x00000060       0x38 ./MCAL/Mcal_I2c.o
+ .debug_ranges  0x00000098       0x48 ./MCAL/Mcal_gpio.o
+ .debug_ranges  0x000000e0       0x38 ./MCAL/mcal_adc.o
+ .debug_ranges  0x00000118       0x38 ./MCAL/mcal_spi.o
+ .debug_ranges  0x00000150       0x28 ./MCAL/mcal_timer0.o
+ .debug_ranges  0x00000178       0x38 ./MCAL/mcal_uart.o
+ .debug_ranges  0x000001b0       0x58 ./ECAL/Ecual_DHT11.o
+ .debug_ranges  0x00000208       0x28 ./ECAL/Ecual_Ultrasonic.o
+ .debug_ranges  0x00000230      0x110 ./ECAL/Ecual_lcd.o
+ .debug_ranges  0x00000340       0x70 ./ECAL/Ecual_max7219.o
+ .debug_ranges  0x000003b0       0x30 ./ECAL/Ecual_rtc.o
+ .debug_ranges  0x000003e0       0x20 ./main.o
+ .debug_ranges  0x00000400       0x50 h:/avr/tools/eclipse/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
